@@ -1,0 +1,19 @@
+.tradeBox {
+  width: 700px;
+
+  min-height: 750px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  .swapWidgetContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

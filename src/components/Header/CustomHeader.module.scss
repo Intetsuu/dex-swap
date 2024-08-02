@@ -1,0 +1,71 @@
+.header {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    .logo {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      img {
+        height: auto;
+        width: 150px;
+      }
+      Link,
+      a {
+        color: #ffffff; /* черный цвет ссылки */
+        text-decoration: none;
+      }
+
+      h1 {
+        padding-left: 20px;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .eth {
+        height: 40px; // Задаем высоту логотипа
+        width: auto; // Сохраняем пропорции
+        margin-right: 20px; // Добавляем отступ между логотипом и первым элементом меню
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        a {
+          margin-left: 20px;
+          color: #c9c9c9;
+
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 23px;
+          text-decoration: none;
+          transition: color 0.1s ease-in-out;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      .connectButton {
+        background-color: #243056;
+        padding: 10px;
+        margin-left: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 100px;
+        color: #5981f3;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
