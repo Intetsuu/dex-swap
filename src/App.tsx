@@ -25,13 +25,11 @@ function App() {
     <BrowserRouter basename="/dex-swap">
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
-          <BrowserRouter>
-            <CustomHeader />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/trending" element={<Trending />} />
-            </Routes>
-          </BrowserRouter>
+          <CustomHeader />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/trending" element={<Trending />} />
+          </Routes>
         </QueryClientProvider>
       </WagmiProvider>
     </BrowserRouter>
