@@ -24,7 +24,7 @@ const CustomHeader: React.FC = () => {
     <ul className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <Link to="/">
+          <Link to="/" state={{ fromLocation: true }}>
             <img src={logo} alt="Logo" />
           </Link>
           <Link to="/swap">
